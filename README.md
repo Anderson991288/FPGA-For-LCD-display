@@ -33,7 +33,6 @@ VGA scanning, the basic element is line scan, multiple lines form a frame, the f
 Blanking" is the synchronization time of a line, the "Blanking" time plus the "Active" Video time is the time of a line. "Blanking" is divided into "Front Porch", "Sync" and "Back Porch "Back Porch".
 
 
-![HS1](https://user-images.githubusercontent.com/68816726/215069252-2bd8e986-5bc3-4dc9-91dd-358b83a11157.png)
 
 
 ![VS1](https://user-images.githubusercontent.com/68816726/215069265-b7e8d921-cae8-4f96-9963-478db1044232.png)
