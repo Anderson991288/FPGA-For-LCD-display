@@ -43,7 +43,7 @@ VGA_GEN.v
 
 module VGA_GEN(
 
-input   wire			      clk,
+input   wire			  clk, //Total number of values to count in a row
 input	wire			  rst_n,
 output	wire			  vga_clk,
 output	wire			  vpg_de,
