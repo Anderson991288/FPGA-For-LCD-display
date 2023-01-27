@@ -1,12 +1,14 @@
 module tb();
-parameter       HS_TOTAL = 525 - 1;
-parameter       HS_SYNC = 3 - 1;
-parameter       HS_START = 43 - 1;
-parameter       HS_END = 523 - 1;
-parameter       V_TOTAL = 286 - 1;
-parameter       V_SYNC = 3- 1;
-parameter       V_START = 12 - 1;
-parameter       V_END = 284 - 1;
+
+
+parameter       HS_TOTAL =1344 - 1;
+parameter       HS_SYNC = 136 - 1;
+parameter       HS_START = 24 - 1;
+parameter       HS_END = 160 - 1;
+parameter       V_TOTAL = 806 - 1;
+parameter       V_SYNC =6 - 1;
+parameter       V_START = 3 - 1;
+parameter       V_END = 29 - 1;
 parameter       SQUARE_X    =   150;
 parameter       SQUARE_Y    =   150;
 parameter       SCREEN_X    =   480;
