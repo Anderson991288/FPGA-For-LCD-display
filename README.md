@@ -11,7 +11,7 @@ It is widely used as a standard display interface. Common color displays are gen
 
 At the end of each line, the beam is synchronized with the line synchronization signal at the end of each line; after scanning all the lines, the field synchronization signal is used to synchronize and bring the scan back to the top left of the screen. At the end of each line, the CRT is synchronized with the line synchronization signal; after scanning all lines, the CRT is synchronized with the field synchronization signal, and the scan returns to the top left of the screen.
 For a normal VGA display, there are five signals: R, G, and B; HS (line sync signal); VS (field sync signal). signal); and VS (field synchronization signal).
-For the timing driver, the VGA monitor should strictly follow the "VGA" industry standard. We choose the resolution of 1920x1080@60Hz mode.
+For the timing driver, the VGA monitor should strictly follow the "VGA" industry standard. We choose the resolution of  1024x768@60Hz mode.
 Usually the monitors we use meet the industrial Therefore, we design the VGA controller with reference to the technical specifications of the monitor.
 
 
