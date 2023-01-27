@@ -3,9 +3,9 @@
 
 module VGA_GEN(
 
-input   wire			  clk,      
-input	wire			  rst_n,     
-output	wire			  vga_clk,	 
+input   wire			      clk,
+input	wire			  rst_n,
+output	wire			  vga_clk,
 output	wire			  vpg_de,
 output 	wire 			  vpg_disp,
 output	reg			      vga_hs,
@@ -14,18 +14,18 @@ output	reg      [23:0]	  rgb
    	
 );
 
-parameter       HS_TOTAL = 525 - 1; //Total number of values to count in a row
-parameter       HS_SYNC = 41 - 1;   // line synchronization count value
-parameter       HS_START = 43 - 1;	//Row image data valid start count value
-parameter       HS_END = 523 - 1;   //Valid end count value for line image data
-parameter       V_TOTAL = 286 - 1;  //The total number of values to be counted in the field
-parameter       V_SYNC = 10 - 1;    //Field synchronization count value
-parameter       V_START = 12 - 1;   //Field image data valid start count value
-parameter       V_END = 284 - 1;    //Field image data valid end count value
-parameter       SQUARE_X    =   150; //Width of the square
-parameter       SQUARE_Y    =   150; //Length of the square
-parameter       SCREEN_X    =   480; //Screen horizontal length
-parameter       SCREEN_Y    =   272; //Screen vertical length
+parameter       HS_TOTAL =525 - 1;
+parameter       HS_SYNC = 3 - 1;
+parameter       HS_START = 43 - 1;
+parameter       HS_END = 523 - 1;
+parameter       V_TOTAL = 286 - 1;
+parameter       V_SYNC =3 - 1;
+parameter       V_START = 12 - 1;
+parameter       V_END = 284 - 1;
+parameter       SQUARE_X    =   150;
+parameter       SQUARE_Y    =   150;
+parameter       SCREEN_X    =   480;
+parameter       SCREEN_Y    =   272;
 
 
 
@@ -48,38 +48,38 @@ assign rst = ~rst_n;
     .locked(locked1),     
     .clk_in1(clk));     
     
-always @(posedge vga_clk )    // Line counter
+always @(posedge vga_clk )
 	begin
 		if (rst==1'b1) 
 		begin
 		cnt_h <= 'd0;
 		end
 		
-	else if (cnt_h == HS_TOTAL) // Count to maximum value, clear zero	
+	else if (cnt_h == HS_TOTAL) 	
 		begin
 		cnt_h <= 'd0;
 		end
 		
-	else if(cnt_h != HS_TOTAL) //Has not counted to the maximum value, plus one every clock cycle
+	else if(cnt_h != HS_TOTAL) 
 		begin
 		cnt_h <= cnt_h + 1'b1;
 		end
 end
 
 
-always @(posedge vga_clk )     //Field Counter
+always @(posedge vga_clk )
 	begin
 	if (rst==1'b1) 
 		begin
 		cnt_v <='d0;
 		end
 		
-	else if (cnt_v == V_TOTAL && cnt_h == HS_TOTAL)//Field counter counts to maximum value. Clear zero(end of a frame)
+	else if (cnt_v == V_TOTAL && cnt_h == HS_TOTAL) 
 		begin
 		cnt_v <= 'd0;
 		end
 		
-	else if(cnt_h == HS_TOTAL) // At the end of a line scan, the field counter is added by one
+	else if(cnt_h == HS_TOTAL) 
 	begin
 		cnt_v <= cnt_v + 1'b1;
 	end
@@ -202,9 +202,6 @@ end
 
 
 //RGB
-//The value of the output image is determined according to the value of the counter.
-//The moving squares are grayed out.In the rest of the cases, the background color red, green and blue is displayed.
-
 always @(posedge vga_clk ) 
 	begin
 	if (rst==1'b1) 
@@ -214,7 +211,7 @@ always @(posedge vga_clk )
 	
 	else if(cnt_h >=HS_START+x && cnt_h <=HS_START+SQUARE_X+x && cnt_v >=V_START+y && cnt_v <=V_START+SQUARE_Y+y)
 		begin
-		rgb <= 24'hFFB6C1;   //output square image
+		rgb <= 24'hFFB6C1;
 		end
 		
 	else if (cnt_h >=HS_START && cnt_h <HS_END && cnt_v >=V_START && cnt_v <V_END && cnt_h[4:0]>='d20) 
@@ -241,4 +238,3 @@ always @(posedge vga_clk )
 assign  vpg_de = (cnt_h >= HS_START) && (cnt_h < HS_END) && (cnt_v >= V_START) && (cnt_v < V_END);
 
 endmodule
-
