@@ -46,6 +46,15 @@ Blanking" is the synchronization time of a line, the "Blanking" time plus the "A
 
 
 # HDMI output color bar experiment
+## Introduction
 
 Previously, we have understood what VGA timing is, and have successfully driven the LCD
 The display shows a simple moving square on the development board, and the audio and video signals can be directly transmitted through the FPGA pins. The FPGA pins can be used for direct audio and video signal transmission. In this experiment, the FPGA will be used to complete the HDMI output experiment. In this experiment, the FPGA will be used to output the image on an HDMI-enabled display based on the previous one. First, we need to understand the following structure of HDMI.
+
+
+## Experimental principle
+
+HDMI system architecture consists of a source side and a receiver side. A device may have one or more HDMI inputs and one or more HDMI outputs. On these devices, each HDMI input should follow the HDMI receiver side rules and each HDMI output should follow the HDMI source side rules. As shown in the diagram, the HDMI cable and connectors provide four differential pairs that make up the TMDS data and clock channels. These channels are used to pass video, audio, and auxiliary data. In addition, HDMI provides a VESA DDC channel, which is used to configure and exchange status on a separate source side and a separate receiver side. The optional CEC provides a high level of control in a variety of different audio and video products for the user. Optional HDMI Ethernet and Audio Return (HEAC) provides Ethernet-compatible network data and an audio return channel in the opposite direction of the TMDS in the connected device.
+
+
+
