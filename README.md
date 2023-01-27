@@ -244,6 +244,7 @@ end
 //RGB
 //The value of the output image is determined according to the value of the counter.
 //The moving squares are grayed out.In the rest of the cases, the background color red, green and blue is displayed.
+
 always @(posedge vga_clk ) 
 	begin
 	if (rst==1'b1) 
