@@ -41,3 +41,11 @@ Blanking" is the synchronization time of a line, the "Blanking" time plus the "A
 ![VS](https://user-images.githubusercontent.com/68816726/215075031-99c38b60-466d-4d4a-8c89-d84cc0e5862b.png)
 
 
+
+
+
+
+# HDMI output color bar experiment
+
+Previously, we have understood what VGA timing is, and have successfully driven the LCD
+The display shows a simple moving square on the development board, and the audio and video signals can be directly transmitted through the FPGA pins. The FPGA pins can be used for direct audio and video signal transmission. In this experiment, the FPGA will be used to complete the HDMI output experiment. In this experiment, the FPGA will be used to output the image on an HDMI-enabled display based on the previous one. First, we need to understand the following structure of HDMI.
