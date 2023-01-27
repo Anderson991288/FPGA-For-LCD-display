@@ -22,16 +22,15 @@ The time to complete a line scan is called horizontal scan time, and its inverse
 
 * * *
 
+![Screenshot 2023-01-27 165147](https://user-images.githubusercontent.com/68816726/215047836-3769d0ab-b09c-41ad-82f6-e68774740646.png)
+
+
 Clock frequency: 1024x768@59.94Hz(60Hz) for example, each field corresponds to 806 line cycles, of which 768 are display lines. Each display line includes 1344 clock points, of which 1024 points for the effective display area.
 
-It can be seen: the need for point clock frequency: 806 * 1344 * 60 about 65MHz
+### It can be seen: the need for point clock frequency:806 * 1344 * 60 about 65MHz
 
 VGA scanning, the basic element is line scan, multiple lines form a frame, the following figure shows the timing of a line, where "Active" Video is the active pixels of a line of video, most of the resolution clock Top/Left Border and Bottom/Right Border are 0.
 Blanking" is the synchronization time of a line, the "Blanking" time plus the "Active" Video time is the time of a line. "Blanking" is divided into "Front Porch", "Sync" and "Back Porch "Back Porch".
-
-
-
-
 
 
 
