@@ -35,11 +35,5 @@ Blanking" is the synchronization time of a line, the "Blanking" time plus the "A
 
 # Simulation:
 
-![HS1](https://user-images.githubusercontent.com/68816726/215070606-5d33157d-594b-430d-a0ad-b90f3ef10f12.png)
-
-
-
-![VS1](https://user-images.githubusercontent.com/68816726/215069265-b7e8d921-cae8-4f96-9963-478db1044232.png)
-
 
 
