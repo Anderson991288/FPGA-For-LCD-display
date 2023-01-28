@@ -65,3 +65,7 @@ A TMDS clock, typically at the video pixel rate, is transmitted in the TMDS cloc
 
 An HDMI connection consists of three TMDS data channels, one TMDS clock channel. The TMDS clock channel runs at a constant rate proportional to the pixel rate of the video. During each TMDS clock channel cycle, the three TMDS data channels run at a constant rate proportional to the pixel rate of the video. The TMDS clock channel operates at a constant rate that is proportional to the pixel rate of the video. This 10-bit word is encoded, using some different encoding technique. The input stream to the source contains video pixels, data packets, and control data. The data packets include audio data and auxiliary and associated error correction codes. These data items are processed differently and represented in the TMDS encoder for each TMDS channel as either 2 bits of control data, or 4 bits of message data, and
 or 4 bits of telegram data, or 8 bits of video data. The source side encodes these data types in each clock cycle, or encodes a boundary data type. The source side encodes these data types or encodes a boundary character in each clock cycle.
+
+
+
+![Screenshot 2023-01-28 181515](https://user-images.githubusercontent.com/68816726/215261249-1180ff39-39b5-4a85-aee6-1f186f9a162c.png)
