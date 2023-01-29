@@ -80,7 +80,5 @@ Click clone to download files from other users' repositories to your local. Once
 
 Create a new ip_repo folder in the project directory to store third-party IPs, and assign the required IPs mentioned earlier to this folder. Copy the required IP and if folder to ip_repo. 
 
-![Screenshot 2023-01-29 171835](https://user-images.githubusercontent.com/68816726/215316950-1519ab1c-d8e0-48e2-94d1-4249d41c7fe9.png)
-
 
 ![image](https://user-images.githubusercontent.com/68816726/215320755-a6e09010-f066-4f88-a176-7ba074eccd65.png)
