@@ -70,5 +70,7 @@ An HDMI connection consists of three TMDS data channels, one TMDS clock channel.
 or 4 bits of telegram data, or 8 bits of video data. The source side encodes these data types in each clock cycle, or encodes a boundary data type. The source side encodes these data types or encodes a boundary character in each clock cycle.
 
 
+![VGA](https://user-images.githubusercontent.com/68816726/215316579-136f1ded-d044-4b62-874c-baecddf5b6f7.png)
+
 
 ![Screenshot 2023-01-28 181515](https://user-images.githubusercontent.com/68816726/215261249-1180ff39-39b5-4a85-aee6-1f186f9a162c.png)
