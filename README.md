@@ -72,5 +72,21 @@ or 4 bits of telegram data, or 8 bits of video data. The source side encodes the
 
 ![VGA](https://user-images.githubusercontent.com/68816726/215316579-136f1ded-d044-4b62-874c-baecddf5b6f7.png)
 
+This experiment requires the use of a third-party IP, which can be found on github.
+
+Link: https://github.com/Digilent/vivado-library
+
+Click clone to download files from other users' repositories to your local. Once downloaded locally, we can add the third-party IP to the Vivado project, and then the user can use the third-party IP.
+
+Create a new ip_repo folder in the project directory to store third-party IPs, and assign the required IPs mentioned earlier to this folder. Copy the required IP and if folder to ip_repo. 
+
+![Screenshot 2023-01-29 171835](https://user-images.githubusercontent.com/68816726/215316950-1519ab1c-d8e0-48e2-94d1-4249d41c7fe9.png)
+
+
+![Screenshot 2023-01-29 171726](https://user-images.githubusercontent.com/68816726/215316899-61849c3a-728b-4da2-a6bf-8df743ad27f8.png)
+
+
+
+
 
 ![Screenshot 2023-01-28 181515](https://user-images.githubusercontent.com/68816726/215261249-1180ff39-39b5-4a85-aee6-1f186f9a162c.png)
