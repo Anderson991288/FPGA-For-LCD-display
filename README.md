@@ -1,5 +1,8 @@
 # FPGA For LCD Display
 
+
+
+
 * * *
 
 There are many standards for the display of computer display area, the common ones are VGA, SVGA, etc. Here we use VGA interface to control the monitor, VGA stands for Video Graphics Array, which means video graphics array. VGA stands for Video Graphics Array.
