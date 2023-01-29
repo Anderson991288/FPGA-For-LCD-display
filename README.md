@@ -83,11 +83,4 @@ Create a new ip_repo folder in the project directory to store third-party IPs, a
 ![Screenshot 2023-01-29 171835](https://user-images.githubusercontent.com/68816726/215316950-1519ab1c-d8e0-48e2-94d1-4249d41c7fe9.png)
 
 
-![Screenshot 2023-01-29 171726](https://user-images.githubusercontent.com/68816726/215316899-61849c3a-728b-4da2-a6bf-8df743ad27f8.png)
-
-
-![Screenshot 2023-01-29 172049](https://user-images.githubusercontent.com/68816726/215317039-4db6bcb3-f603-420d-8bcc-f0a2610bcc20.png)
-
-
-
-![Screenshot 2023-01-28 181515](https://user-images.githubusercontent.com/68816726/215261249-1180ff39-39b5-4a85-aee6-1f186f9a162c.png)
+![image](https://user-images.githubusercontent.com/68816726/215320755-a6e09010-f066-4f88-a176-7ba074eccd65.png)
