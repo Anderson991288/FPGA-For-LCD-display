@@ -1,0 +1,15 @@
+set_property PACKAGE_PIN W1 [get_ports {TMDSp[0]}]
+set_property PACKAGE_PIN AA1 [get_ports {TMDSp[1]}]
+set_property PACKAGE_PIN AB3 [get_ports {TMDSp[2]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSp[0]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSn[0]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSp[1]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSn[1]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSp[2]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDSn[2]}]
+
+set_property PACKAGE_PIN R4 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+
+set_property PACKAGE_PIN T1 [get_ports TMDSp_clock]
+set_property IOSTANDARD TMDS_33 [get_ports TMDSp_clock]
